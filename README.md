@@ -1,4 +1,4 @@
-# Gestion des Pneus Vélo - Application Web
+# Application web de gestion des pneus de vélo
 
 Une application web de gestion de stock développée en **Python** avec le micro-framework **Flask** et utilisant une base de données **MySQL** pour le stockage des données.
 
@@ -6,7 +6,7 @@ L'interface permet de gérer les types de pneus, les articles en stock, d'appliq
 
 ---
 
-## Démonstration en Ligne
+## Démonstration en ligne
 
 Le site est déployé et accessible pour consulter :
 
@@ -26,7 +26,7 @@ Ce projet implémente un CRUD (Create, Read, Update, Delete) complet et des fonc
 
 ---
 
-## Installation et Lancement Local
+## Installation et lancement local
 
 Pour mettre en place l'environnement de développement local, suivez ces étapes.
 
@@ -37,26 +37,17 @@ Pour mettre en place l'environnement de développement local, suivez ces étapes
 
 ### 1. Téléchargement et Configuration
 
-1.  **Cloner le dépôt**
-    ```bash
-    git clone [https://github.com/VAL-b04/Site_Pneu](https://github.com/VAL-b04/Site_Pneu)
-    cd Site_Pneu
-    ```
-
-2.  **Créer et Activer l'Environnement Virtuel (Recommandé)**
-    ```bash
-    python -m venv venv
-    # Activation (Linux/macOS)
-    source venv/bin/activate
-    # Activation (Windows - PowerShell)
-    # .\venv\Scripts\Activate.ps1
-    ```
+ **Cloner le dépôt**
+```bash
+git clone [https://github.com/VAL-b04/Site_Pneu](https://github.com/VAL-b04/Site_Pneu)
+cd Site_Pneu
+```
 
 ### 2. Configuration de la Base de Données
 
 Le projet est configuré pour se connecter à la base de données nommée `projet_pneu`.
 
-**Avertissement de Sécurité :** Le fichier `app.py` contient des identifiants de connexion MySQL (utilisateur, mot de passe) codés en dur. **Vous devez modifier ces informations** (lignes 22-27) pour utiliser vos propres identifiants MySQL locaux.
+**Avertissement de Sécurité :** Le fichier `app.py` contient des identifiants de connexion MySQL (utilisateur, mot de passe). **Vous devez modifier ces informations** (lignes 22-27) pour utiliser vos propres identifiants MySQL locaux.
 
 **Création de la BDD (via terminal MySQL) :**
 
@@ -73,7 +64,7 @@ Le projet est configuré pour se connecter à la base de données nommée `proje
 
 1.  **Lancer le Serveur Flask**
     ```bash
-    flask --debug  --app app  run   --host 0.0.0.0
+    flask --debug --app app run --host 0.0.0.0
     ```
     L'application sera accessible à l'adresse par défaut : `http://127.0.0.1:5000/`.
 
