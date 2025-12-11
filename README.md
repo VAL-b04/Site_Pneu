@@ -72,13 +72,14 @@ Le projet est configuré pour se connecter à la base de données nommée `proje
 2.  Dans la console MySQL, créez la base de données :
     ```sql
     CREATE DATABASE projet_pneu;
+    USE projet_pneu;
     ```
 
 ### 3. Lancement de l'Application
 
 1.  **Lancer le Serveur Flask**
     ```bash
-    python app.py
+    flask --debug  --app app  run   --host 0.0.0.0
     ```
     L'application sera accessible à l'adresse par défaut : `http://127.0.0.1:5000/`.
 
