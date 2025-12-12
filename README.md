@@ -39,7 +39,7 @@ Pour mettre en place l'environnement de développement local, suivez ces étapes
 
  **Cloner le dépôt**
 ```bash
-git clone [https://github.com/VAL-b04/Site_Pneu](https://github.com/VAL-b04/Site_Pneu)
+git clone https://github.com/VAL-b04/Site_Pneu
 cd Site_Pneu
 ```
 
